@@ -15,7 +15,7 @@
 int main(void) {
 	// Example 1
 
-	float a [2][2];
+    float a [2][2];
 	float b[2][2];
 	int c=0,i=0;
 	printf("Enter the elements of the first matrix.\n");
