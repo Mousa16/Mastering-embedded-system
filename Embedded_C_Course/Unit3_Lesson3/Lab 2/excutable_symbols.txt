@@ -1,0 +1,39 @@
+
+learn-in-depth_cortex-m3.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+08000000 l    d  .text	00000000 .text
+20000000 l    d  .data	00000000 .data
+20000008 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 startup.c
+00000000 l    df *ABS*	00000000 main.c
+08000098  w    F .text	0000000c NMI_Handler
+08000128 g     O .text	00000003 const_variables
+08000098  w    F .text	0000000c H_Fault_Handler
+20000000 g       .data	00000000 _S_Data
+20000004 g     O .data	00000003 g_variables
+08000098  w    F .text	0000000c MM_Fault_Handler
+080000a4 g     F .text	00000084 Reset_Handler
+20001008 g       .bss	00000000 _stack_top
+08000098  w    F .text	0000000c Bus_Fault
+08000098 g     F .text	0000000c Default_Handler
+20000008 g       .bss	00000000 _S_Bss
+0800001c g     F .text	0000007c main
+20000000 g     O .data	00000004 R_ODR
+08000098  w    F .text	0000000c Usage_Fault_Handler
+20001008 g     O .bss	00000003 v_bss
+20000008 g       .bss	00000000 _E_Bss
+20000008 g       .data	00000000 _E_Data
+0800012b g       .text	00000000 _E_text
+08000000 g     O .text	0000001c vectors
+
+
