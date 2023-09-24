@@ -1,0 +1,35 @@
+
+Unit3_Lesson4_cortex-m4.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+20000000 l    d  .data	00000000 .data
+20000000 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 startup.c
+20000000 l       .bss	00000400 Stack_top
+00000000 l    df *ABS*	00000000 main.c
+0000013c g       .text	00000000 _E_TEXT
+000000ac  w    F .text	0000000c NMI_Handler
+000000ac  w    F .text	0000000c H_Fault_Handler
+000000ac  w    F .text	0000000c MM_Fault_Handler
+000000b8 g     F .text	00000084 Reset_Handler
+20000000 g       .data	00000000 _E_DATA
+000000ac  w    F .text	0000000c Bus_Fault
+00000000 g     O .text	0000001c g_ptr_fn_vectors
+000000ac g     F .text	0000000c Default_Handler
+20000400 g       .bss	00000000 _E_BSS
+0000001c g     F .text	00000090 main
+000000ac  w    F .text	0000000c Usage_Fault_Handler
+20000000 g       .data	00000000 _S_DATA
+20000000 g       .bss	00000000 _S_BSS
+
+
