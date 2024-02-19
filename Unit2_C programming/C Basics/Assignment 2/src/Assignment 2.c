@@ -12,7 +12,7 @@
 #include <stdlib.h>
 
 int main(void) {
-	// Example 1
+	/* Example 1 */
 	int x;
 	printf("Enter the integer you want to check.\n");
 	fflush(stdin);fflush(stdout);
@@ -27,34 +27,28 @@ int main(void) {
 		break;
 	}
 
-	// Example 2
+	/* Example 2 */
 	char c;
-	printf("Enter an alphabet.\n");
+	printf("Enter a character: ");
 	fflush(stdin);fflush(stdout);
 	scanf("%c",&c);
-	switch(c)
-	{
-	case 'a':
-		printf("%c is a vowel\n",c);
-		break;
-	case 'o':
-		printf("%c is a vowel\n",c);
-		break;
-	case 'e':
-		printf("%c is a vowel\n",c);
-		break;
+	switch(c){
 	case 'i':
-		printf("%c is a vowel\n",c);
-		break;
+	case 'e':
+	case 'o':
 	case 'u':
-		printf("%c is a vowel\n",c);
-		break;
-	default:
-		printf("%c is not a vowel\n",c);
+	case 'a':
+	{
+		printf("vowel\n");
 		break;
 	}
+	default:{
+		printf("consonant\n");
+		break;
+	}
+	}
 
-	//Example 3
+	/* Example 3 */
 	float n1,n2,n3;
 	printf("Enter three numbers.\n");
 	fflush(stdin);fflush(stdout);
@@ -79,7 +73,7 @@ int main(void) {
 	break;
 	}
 
-	//Example 4
+	/* Example 4 */
 	float n;
 	printf("Enter a number.\n");
 	fflush(stdin);fflush(stdout);
@@ -91,7 +85,7 @@ int main(void) {
 	else
 		printf("%f is zero.\n",n);
 
-	//Example 5
+	/* Example 5 */
 	char c1;
 	printf("Enter a character.\n");
 	fflush(stdin);fflush(stdout);
@@ -103,7 +97,7 @@ int main(void) {
 	else
 		printf("%c is not a character.\n",c1);
 
-	// Example 6
+	/* Example 6 */
 	int num,i,sum=0;
 	printf("Enter an integer.\n");
 	fflush(stdin);fflush(stdout);
@@ -111,16 +105,14 @@ int main(void) {
 	for (i = 1;i<=num;i++)
 	{
 		sum += i;
-		if (i == num)
-			break;
 	}
 	printf("Sum = %d.\n",sum);
 
-	// Example 7
-	int f,counter,factorial=1;
+	/* Example 7 */
+	unsigned int f,counter,factorial=1;
 	printf("Enter an integer.\n");
 	fflush(stdin);fflush(stdout);
-	scanf("%d",&f);
+	scanf("%u",&f);
 	if (f==0)
 		printf("Factorial of zero is 1 .\n");
 	else if (f==1)
@@ -129,12 +121,12 @@ int main(void) {
 	{
 		for (counter = f;counter >0;counter--)
 			factorial *= counter;
-		printf("Factorial of %d is %d\n",f,factorial);
+		printf("Factorial of %u is %u\n",f,factorial);
 	}
 	else
 		printf("Error !!! Factorial of negative number doesn't exist.\n");
 
-	// Example 8
+	/* Example 8 */
 	float o1,o2;
 	char o;
 	printf("Enter operator either + or - or * or /\n");
