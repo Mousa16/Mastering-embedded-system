@@ -11,10 +11,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int Find_Prime(int x); // Function Prototype
-int Factorial(int x); // Function prototype
-int Power(int x,int y);// Function prototype
-void Reverse(char str[], int i);// Function prototype
+int Find_Prime(int x);			/* Function Prototype */
+int Factorial(int x);			/* Function Prototype */
+int Power(int x,int y);			/* Function Prototype */
+void Reverse(char str[], int i);/* Function Prototype */
 int main(void) {
 
 	printf("*****************************************************\n");
@@ -61,7 +61,7 @@ int main(void) {
 	fflush(stdin);fflush(stdout);
 	char str[100];
 	scanf("%[^\n]%*c", str);
-	int i = strlen(str) - 1;
+	int i = strlen(str);
 	Reverse(str, i);
 	printf("\n");
 
@@ -80,12 +80,14 @@ int main(void) {
 	return EXIT_SUCCESS;
 }
 
-// Function definition for example 1
+/* Function definition for example 1 */
 
 
 int Find_Prime (int x)
 {
 	int c;
+	if (x < 2)
+		return 1;
 	for (c = 2;c < x; c++)
 	{
 		if (x % c == 0)
@@ -94,7 +96,7 @@ int Find_Prime (int x)
 	return 0;
 }
 
-// Function definition for example 2
+/* Function definition for example 2 */
 
 int Factorial(int x)
 {
@@ -102,7 +104,7 @@ int Factorial(int x)
 	if (x != 1)
 		return x * Factorial(x-1);
 }
-// Function of example 3
+/* Function of example 3 */
 void Reverse(char str[], int i)
 {
     if (i > 0)
@@ -113,7 +115,7 @@ void Reverse(char str[], int i)
     }
 }
 
-// Function of example 4
+/* Function of example 4 */
 
 int Power(int x,int y)
 {
